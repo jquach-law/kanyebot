@@ -2,16 +2,17 @@ import discord
 import os
 import requests
 import json
-from keep_alive import keep_alive
 import random
 
 client = discord.Client()
 
 # First list of keywords, if matched trigger get request
-greatest = ['a', 'list', 'of', 'keywords']
+greatest = ['greatest', 'Greatest', 'GREATEST', 'perfect', 'Perfect', 'PERFECT', 'highest', 'Highest', 'HIGHEST', 'crazy', 'Crazy', 'CRAZY', 'holy', 'Holy', 'HOLY', 'Kardashian', 'kardasdian', 'KARDASHIAN', 'Chicago', 'chicago', 'CHICAGO', 'West', 'west', 'WEST', 'North', 'north', 'Donda', 'donda', 'DONDA', 'Yeezy', "YEEZY", 'yeezy',
+            'trump', 'Trump', 'TRUMP', 'KING', 'King', 'king', 'Grammy', 'grammy', 'Jesus', 'JESUS', 'jesus', 'Pablo', 'pablo', 'PABLO', 'MAGA', 'Maga', 'maga', 'SAINT', 'Saint', 'saint', 'race', 'RACE', 'Race', 'racist', 'Racist', 'RACIST', 'Slavery', 'slavery', 'SLAVERY',  'Yeezus', 'YEEZUS', 'yeezus',  'Taylor Swift', 'TAYLOR SWIFT', 'taylor swift']
   
 # Second list of keywords, if match trigger get request
-ye = ['a', 'different', 'list', 'of', 'keywords']
+ye = ['ye', 'YE', 'Ye', 'ok', 'OK', 'Ok', 'New York', 'new york', 'NEW YORK', 'ny', 'NY', 'LA', 'impossible', 'IMPOSSIBLE',
+      'Impossible', 'important', 'IMPORTANT', 'Important', 'great', 'Great', 'GREAT', 'best', 'Best', 'BEST', 'kanye', 'Kanye', 'KANYE']
 
 def get_quote():
   # Get requests for a random Kanye quote
@@ -37,7 +38,7 @@ async def on_message(message):
   # Message's content
   msg = message.content
 
-  # Bot responds 100% to message: '$bruteforce'
+  # For testing, bot responds 100%
   if msg.startswith('$bruteforce'):
     quote = get_quote()
     await message.channel.send(quote)
@@ -60,5 +61,4 @@ async def on_message(message):
       quote = get_quote()
       await message.channel.send(quote)
 
-keep_alive()
 client.run(os.getenv('TOKEN'))
