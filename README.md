@@ -4,7 +4,7 @@
 
 Example 1            |  Example 2
 :-------------------------:|:-------------------------:
-![Employee data](/kanyebot/README_images/IMG_0749.PNG "Employee Data title")  | ![Employee data](/kanyebot/README_images/IMG_0750.PNG "Employee Data title")
+<img alt="Ex1" src="./README_images/IMG_0749.PNG?raw=true">  | <img alt="Ex2" src="./README_images/IMG_0750.PNG?raw=true">
 
 ## Set Up
 
