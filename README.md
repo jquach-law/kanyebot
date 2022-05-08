@@ -29,3 +29,7 @@ Discord Documentation:
 ## Usage
 
 The bot will listen and respond to messages anywhere it has permission to read the messages. It could be 1-on-1 direct message or group chat.
+
+## Kanye Quote API
+
+<https://kanye.rest/>
