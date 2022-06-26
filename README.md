@@ -2,9 +2,7 @@
 
 "Kanye" bot reads and replies to messages with a random Kanye quote.
 
-Example 1            |  Example 2
-:-------------------------:|:-------------------------:
-<img alt="Ex1" src="./README_images/IMG_0749.PNG?raw=true">  | <img alt="Ex2" src="./README_images/IMG_0750.PNG?raw=true">
+<img alt="Ex2" src="README_images\Screenshot 2022-05-08 175044.png?raw=true">
 
 ## Set Up
 
@@ -29,6 +27,10 @@ Discord Documentation:
 ## Usage
 
 The bot will listen and respond to messages anywhere it has permission to read the messages. It could be 1-on-1 direct message or group chat.
+
+Example 1            |  Example 2
+:-------------------------:|:-------------------------:
+<img alt="Ex1" src="./README_images/IMG_0749.PNG?raw=true">  | <img alt="Ex2" src="./README_images/IMG_0750.PNG?raw=true">
 
 ## Kanye Quote API
 
